@@ -2,6 +2,8 @@ import sys
 import subprocess
 subprocess.check_call([sys.executable, '-m', 'pip', 'install', 
 'xgboost'])
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 
+'joblib'])
 
 import joblib
 import streamlit as st
