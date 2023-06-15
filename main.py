@@ -9,6 +9,16 @@ import joblib
 import streamlit as st
 import xgboost as xgb
 
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score
+from sklearn.model_selection import cross_val_score
+from sklearn.ensemble import RandomForestClassifier
+import xgboost as xgb
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
+from sklearn.naive_bayes import GaussianNB
+from sklearn.model_selection import GridSearchCV
+
 model = joblib.load('XGB_model.joblib')
 st.title('Breast Cancer Prediction')
 radius_mean = st.number_input('Radius mean:')
