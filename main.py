@@ -11,7 +11,7 @@ import pandas as pd
 import xgboost as xgb
 from pandas import DataFrame, read_csv, Series
 
-model = joblib.load('RF_model.joblib')
+model = joblib.load('XGB_model.joblib')
 st.title('Breast Cancer Prediction')
 radius_mean = st.number_input('Radius mean:')
 texture_mean = st.number_input('Texture mean:')
