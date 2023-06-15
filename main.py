@@ -2,12 +2,14 @@
 # import sys
 # subprocess.check_call([sys.executable, "-m", "pip", "install", 'joblib'])
 # subprocess.check_call([sys.executable, "-m", "pip", "install", 'xgboost'])
+subprocess.check_call([sys.executable, "-m", "pip", "install", 'sklearn'])
 
 import numpy as np
 import pandas as pd
 import joblib
 import streamlit as st
 import xgboost as xgb
+
 
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score
