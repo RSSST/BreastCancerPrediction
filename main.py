@@ -1,6 +1,7 @@
 import sys
 import subprocess
 subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'xgboost'])
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'joblib'])
 
 import numpy as np
 import pandas as pd
