@@ -1,6 +1,7 @@
-import os
-os.system('pip install joblib')
-os.system('pip install xgb')
+import subprocess
+import sys
+subprocess.check_call([sys.executable, "-m", "pip", "install", 'joblib])
+subprocess.check_call([sys.executable, "-m", "pip", "install", 'xgboost])
 
 import numpy as np
 import pandas as pd
