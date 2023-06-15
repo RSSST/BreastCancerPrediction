@@ -1,8 +1,8 @@
-import subprocess
-import sys
+# import subprocess
+# import sys
 # subprocess.check_call([sys.executable, "-m", "pip", "install", 'joblib'])
 # subprocess.check_call([sys.executable, "-m", "pip", "install", 'xgboost'])
-subprocess.check_call([sys.executable, "-m", "pip", "install", 'scikit-learn'])
+# subprocess.check_call([sys.executable, "-m", "pip", "install", 'scikit-learn'])
 
 import numpy as np
 import pandas as pd
