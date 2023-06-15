@@ -1,7 +1,6 @@
-packages = ['xgboost', 'joblib']
 import sys
 import subprocess
-subprocess.check_call([sys.executable, '-m', 'pip', 'install', packages])
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'xgboost'])
 
 import numpy as np
 import pandas as pd
