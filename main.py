@@ -1,16 +1,13 @@
+packages = ['xgboost', 'joblib']
 import sys
 import subprocess
-subprocess.check_call([sys.executable, '-m', 'pip', 'install', 
-'xgboost'])
-subprocess.check_call([sys.executable, '-m', 'pip', 'install', 
-'joblib'])
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', packages])
 
+import numpy as np
+import pandas as pd
 import joblib
 import streamlit as st
-import numpy as np 
-import pandas as pd 
 import xgboost as xgb
-from pandas import DataFrame, read_csv, Series 
 
 model = joblib.load('XGB_model.joblib')
 st.title('Breast Cancer Prediction')
