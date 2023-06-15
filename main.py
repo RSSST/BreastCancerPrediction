@@ -32,9 +32,9 @@ def predict():
     prediction = model.predict(x)[0]
 
     if prediction == 0:
-        st.success('Low risk')
+        st.success('0 - Benign')
     else:
-        st.error('High risk')
+        st.error('1 - Malignant')
 
 
 st.button('Predict', on_click=predict)
