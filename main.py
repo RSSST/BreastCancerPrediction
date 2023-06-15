@@ -1,7 +1,7 @@
-# import subprocess
-# import sys
+import subprocess
+import sys
 # subprocess.check_call([sys.executable, "-m", "pip", "install", 'joblib'])
-# subprocess.check_call([sys.executable, "-m", "pip", "install", 'xgboost'])
+subprocess.check_call([sys.executable, "-m", "pip", "install", 'xgboost'])
 # subprocess.check_call([sys.executable, "-m", "pip", "install", 'scikit-learn'])
 
 import joblib
@@ -11,7 +11,7 @@ import pandas as pd
 import xgboost as xgb
 from pandas import DataFrame, read_csv, Series
 
-model = joblib.load('SVM_model.joblib')
+model = joblib.load('XGB_model.joblib')
 st.title('Breast Cancer Prediction')
 radius_mean = st.number_input('Radius mean:')
 texture_mean = st.number_input('Texture mean:')
